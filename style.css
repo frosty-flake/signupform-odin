@@ -47,6 +47,10 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+input {
+  appearance: none;
+}
+
 /* Logo font */
 @font-face {
     font-family: 'Norse';
@@ -176,6 +180,20 @@ input[type="email"],
 input[type="tel"],
 input[type="password"] {
   width: 20em;
+  border: 2px solid #c7c7c7;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="password"]:invalid {
+  border: 2px solid rgb(223, 0, 0);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  border: 2px solid rgb(30, 191, 255);
 }
 
 .head-text-container,
@@ -204,3 +222,17 @@ input[type="password"] {
   font-weight: bold;
   color: #596D48;
 }
+
+button:hover {
+  outline: 2px solid black;
+}
+
+button:active {
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+.button-section a:hover {
+  text-decoration: underline;
+}
+
