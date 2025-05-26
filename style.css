@@ -73,7 +73,7 @@ body {
   width: min(600px, 40vw);
   background-image: url("img/background.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100vh;
+  background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
@@ -91,6 +91,7 @@ div .logo-container {
   justify-content: center;
   gap: 10px;
   padding: 10px 0px;
+  overflow: hidden;
 }
 
 .logo {
