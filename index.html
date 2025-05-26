@@ -7,6 +7,65 @@
     <title>Imaginary Sign-up Form</title>
 </head>
 <body>
-    <h1>Sign-up Form</h1>
+    <div class="bg-image-container">
+        <img src="img/background.jpg" 
+        alt="background image of leaves" style="height:100vh; width: auto" class="bg-image">
+        <div class="logo-container">
+            <img src="img/odin-lined.png" alt="odin logo image" class="logo">
+            <p class="logo-text">ODIN</p>
+        </div>
+        <p>Background image: Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+    </div>
+    <div class="content-container">
+        <div class="head-text-container">
+            <p>
+                This is a <strong>fake</strong> online service. You know you need something like this 
+                in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+            <p>Please do not enter any real sensitive information into this website.</p>
+        </div>
+        <form action="" method="post" class="sign-up-form">
+            <section>
+                <p>Let's do this!</p>
+                <div class="form-row">
+                    <div class="form-content">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div class="form-content">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-content">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-content">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" id="number" name="number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-content">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" name="pwd">
+                    </div>
+                    <div class="form-content">
+                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-pwd" name="confirm-pwd">
+                        /div>
+                </div>
+            </section>
+            <section>
+                <button type="submit" class="create-btn">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </section>
+        </form>
+    </div>
 </body>
 </html>
