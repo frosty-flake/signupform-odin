@@ -9,6 +9,7 @@
 
 * {
   margin: 0;
+  font-family: Verdana, system-ui, sans-serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -54,4 +55,55 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+}
+
+body {
+  display: flex;
+  min-width: 100vw;
+  max-height: 100vh;
+}
+
+.bg-image-container {
+  flex: 0 0 auto;
+  height: 100vh;
+  width: min(600px, 40vw);
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div .logo-container {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
+}
+
+
+
+.logo {
+  height: 7em;
+}
+
+.logo + p {
+  font-family: "Norse", system-ui, sans-serif;
+  color: white;
+  font-size: 6.5em;
+}
+
+.bg-image-container > p,
+.bg-image-container a {
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
 }
